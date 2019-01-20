@@ -1,0 +1,24 @@
+1) pip install -r requirements.txt
+2) python manage.py migrate
+3) python manage.py get_data
+4) python manage.py runserver
+
+
+1.   TO install libraries
+2.   TO setup database
+3.   TO get data from s3
+4.   TO hit api calls
+
+
+A.   GET request
+     curl -X GET 'http://127.0.0.1:8000/api/'
+
+B.   POST request
+     curl -X POST \
+       'http://127.0.0.1:8000/api/?location=UK' \
+         -d '{
+                "wtype": "tmin",
+                "location": "india",
+                "date": "1991-01-01",
+                "value": "1.000"
+                }'
